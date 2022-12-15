@@ -1,0 +1,4 @@
+Math random for bot
+user gets 3 options
+
+when they lose, write YOU LOST above the game, YOU WON otherwise
