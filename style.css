@@ -1,0 +1,35 @@
+html {
+    text-align: center;
+    background-color: rgb(245, 216, 53) ;
+}
+
+html:hover {
+    cursor: no-drop;
+}
+
+body {
+    padding: 50px;
+    margin: auto;
+}
+
+img {
+    padding: 20px;
+}
+
+#playBtn:hover {
+    cursor: cell;
+}
+
+#botIcon {
+    height: 100px;
+}
+
+#botOpt {
+    visibility: hidden;
+}
+
+#playBtn {
+    height: 200px;
+    background-color: rgb(170, 48, 48);
+    border-radius: 50%;
+}
