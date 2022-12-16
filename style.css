@@ -1,19 +1,19 @@
 html {
     text-align: center;
-    background-color: rgb(245, 216, 53) ;
+    background-color: rgb(245,204,101) ;
 }
 
 html:hover {
-    cursor: no-drop;
+    cursor: crosshair;
 }
 
 body {
-    padding: 50px;
+    padding: 20px;
     margin: auto;
 }
 
 img {
-    padding: 20px;
+    padding: 0.5px;
 }
 
 #playBtn:hover {
@@ -22,6 +22,7 @@ img {
 
 #botIcon {
     height: 100px;
+    padding: 20px;
 }
 
 #botOpt {
@@ -29,7 +30,10 @@ img {
 }
 
 #playBtn {
-    height: 200px;
-    background-color: rgb(170, 48, 48);
+    height: 300px;
+    margin-top: 6px;
+    background-color:rgb(116,132,116);
     border-radius: 50%;
+    transform: translate(-0%, 30%);
 }
+
