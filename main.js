@@ -1,5 +1,8 @@
 //Rock Paper Scissors
 
+//Output Message
+ let outputMsgEl = document.getElementById("outputMsg");
+let botOptEl = document.getElementById("botOpt").style.display = "none";
 //Variables
 let optRockEl = document.getElementById("optRock");
 let optPaperEl = document.getElementById("optPaper");
@@ -52,12 +55,68 @@ function chooseScissor() {
 }
 
 function playGame() {
+
+
+
+    console.log("start");
+
+    //Select ROCK
     if (userOpt === 'Rock'){
         let botRandom = Math.random();
+        console.log(botRandom);
+        
+        if (botRandom < 0.33 ) {
+            console.log("rock");
+            console.log("TIE");
+        }
+        else if (botRandom < 0.66 ) {
+            console.log("paper");
+            console.log("YOU LOSE");
 
-        if (botRandom > 3.3 ) {
-            
+        }
+        else {
+            console.log("scissors");
+            console.log("YOU WIN");
         }
     }
+    //Select PAPER
+    if (userOpt === 'Paper') {
+        let botRandom = Math.random();
+        console.log(botRandom);
+        
+        if (botRandom < 0.33 ) {
+            console.log("rock");
+            console.log("YOU WIN");
+        }
+        else if (botRandom < 0.66 ) {
+            console.log("paper");
+            console.log("TIE");
+
+        }
+        else {
+            console.log("scissors");
+            console.log("YOU LOSE");
+        }
+    }
+    //Select Scissors
+    if (userOpt === 'Scissors') {
+        let botRandom = Math.random();
+        console.log(botRandom);
+        
+        if (botRandom < 0.33 ) {
+            console.log("rock");
+            console.log("YOU LOSE");
+        }
+        else if (botRandom < 0.66 ) {
+            console.log("paper");
+            console.log("YOU WIN");
+
+        }
+        else {
+            console.log("scissors");
+            console.log("TIE");
+        }
+    }
+
  
 }
