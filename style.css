@@ -30,10 +30,6 @@ img {
     padding: 20px;
 }
 
-#botOpt {
-/* display: none; */
-}
-
 #playBtn {
     height: 300px;
     margin-top: 6px;
@@ -52,6 +48,19 @@ img {
     margin: auto;
 }
 
+div {
+    position: fixed;
+    transform: translate(1200%, -80%);
+    color: rgb(130, 60, 28);
+    font-size: 20px;
+}
+
+#outputMsg{
+font-size: 30px;
+background-color:rgba(255, 255, 255, 0.6);
+padding: 10px;
+border-radius: 20px;
+}
 
 .userOpt {
     height: 200px;

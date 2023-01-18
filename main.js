@@ -2,7 +2,7 @@
 
 //Output Message
  let outputMsgEl = document.getElementById("outputMsg");
-let botOptEl = document.getElementById("botOpt").style.display = "none";
+
 //Variables
 let optRockEl = document.getElementById("optRock");
 let optPaperEl = document.getElementById("optPaper");
@@ -11,6 +11,7 @@ let optScissorEl = document.getElementById("optScissor");
 
 //Global Variables
 let userOpt = 'Rock';
+let winCountEl = 0;
 
 // Event Functions
 optRockEl.addEventListener("click", chooseRock);
@@ -57,66 +58,55 @@ function chooseScissor() {
 function playGame() {
 
 
-
     console.log("start");
 
     //Select ROCK
     if (userOpt === 'Rock'){
         let botRandom = Math.random();
-        console.log(botRandom);
         
         if (botRandom < 0.33 ) {
-            console.log("rock");
-            console.log("TIE");
+            outputMsgEl.innerHTML="THE BOT CHOSE ROCK, IT'S A TIE!"
         }
         else if (botRandom < 0.66 ) {
-            console.log("paper");
-            console.log("YOU LOSE");
-
+            outputMsgEl.innerHTML="THE BOT CHOSE PAPER, YOU LOSE!"
         }
         else {
-            console.log("scissors");
-            console.log("YOU WIN");
+            outputMsgEl.innerHTML="THE BOT CHOSE SCISSORS, YOU WIN!"
+            winCountEl++;
         }
     }
+
     //Select PAPER
     if (userOpt === 'Paper') {
         let botRandom = Math.random();
-        console.log(botRandom);
         
         if (botRandom < 0.33 ) {
-            console.log("rock");
-            console.log("YOU WIN");
+            outputMsgEl.innerHTML="THE BOT CHOSE ROCK, YOU WIN!"
+            winCountEl++;
         }
         else if (botRandom < 0.66 ) {
-            console.log("paper");
-            console.log("TIE");
-
+            outputMsgEl.innerHTML="THE BOT CHOSE PAPER, IT'S A TIE!"
         }
         else {
-            console.log("scissors");
-            console.log("YOU LOSE");
+            outputMsgEl.innerHTML="THE BOT CHOSE SCISSORS, YOU LOSE!"
         }
     }
+
     //Select Scissors
     if (userOpt === 'Scissors') {
         let botRandom = Math.random();
-        console.log(botRandom);
         
         if (botRandom < 0.33 ) {
-            console.log("rock");
-            console.log("YOU LOSE");
+            outputMsgEl.innerHTML="THE BOT CHOSE ROCK, YOU LOSE!"
         }
         else if (botRandom < 0.66 ) {
-            console.log("paper");
-            console.log("YOU WIN");
-
+            outputMsgEl.innerHTML="THE BOT CHOSE PAPER, YOU WIN!"
+            winCountEl++;
         }
         else {
-            console.log("scissors");
-            console.log("TIE");
+            outputMsgEl.innerHTML="THE BOT CHOSE SCISSORS, IT'S A TIE!"
         }
     }
-
- 
+//Output Message
+    document.getElementById("winsCount").innerHTML = winCountEl;
 }
