@@ -107,6 +107,6 @@ function playGame() {
             outputMsgEl.innerHTML="THE BOT CHOSE SCISSORS, IT'S A TIE!"
         }
     }
-//Output Message
+//Output Wins
     document.getElementById("winsCount").innerHTML = winCountEl;
 }
